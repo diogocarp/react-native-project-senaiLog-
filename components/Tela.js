@@ -1,26 +1,16 @@
 import { StyleSheet, Text, View, TextInput } from 'react-native';
+import style from '../estilos/Style';
 
 
 
 
-let gay,cor,font;
 
-export default function Tela(props){
-    gay = props.recurso
-    cor = props.cor
-    font = props.font
+export default function(props){
     return(
-      <View>
-       <Text style={{color:cor, fontSize:font}}>Exemplo {gay}</Text>
+      <View style={style.container}>
+       <Text style={style.textoExeplos}>Exemplo</Text>
       </View>
     )
-  
-  
   }
 
-  const styles = StyleSheet.create({
-    txt1:{
-        color:'black',
-        fontSize:20
-    }
-  })
+ 
